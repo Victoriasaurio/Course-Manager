@@ -1,0 +1,17 @@
+body {
+    font-family: 'Nunito', sans-serif;
+}
+
+#contentWrap {
+    display: none;
+}
+
+.scroll {
+    /*SCROLL OF CARD-BODY*/
+    width: 780px;
+    height: 470px;
+    max-height: 470px;
+    overflow: scroll;
+    background: white;
+    margin-bottom: 25px;
+}
