@@ -12,7 +12,7 @@ var morgan = require('morgan');
 app.use(express.static(path.join(__dirname, 'public')));
 
 // Section 1: Importación de rutas
-//var rutas_docente = require('./routes/docent');
+const teacher_routes = require('./routes/teacher');
 //var rutas_estudiante = require('./routes/estudiante');
 //var rutas_curso = require('./routes/curso');
 //var rutas_comentario = require('./routes/comentario');
@@ -34,7 +34,7 @@ app.use((req, res, next) => {
 });
 
 // Section 4: carga de rutas
-//app.use('/api', rutas_docente);
+app.use('/api', teacher_routes);
 //app.use('/api', rutas_estudiante);
 //app.use('/api', rutas_curso);
 //app.use('/api', rutas_comentario);
